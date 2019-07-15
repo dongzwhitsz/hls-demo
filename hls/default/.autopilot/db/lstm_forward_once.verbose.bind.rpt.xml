@@ -1,0 +1,82 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'lstm_forward_once'" level="0">
+<item name = "Date">Mon Jul 15 22:02:48 2019
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">hls</item>
+<item name = "Solution">default</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg400-3</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.354, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">818192, 818192, 818192, 818192, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- memset_arr1">127, 127, 1, -, -, 128, no</column>
+<column name="- Loop 2">36096, 36096, 282, -, -, 128, no</column>
+<column name=" + Loop 2.1">280, 280, 10, -, -, 28, no</column>
+<column name="- memset_arr2">127, 127, 1, -, -, 128, no</column>
+<column name="- Loop 4">164096, 164096, 1282, -, -, 128, no</column>
+<column name=" + Loop 4.1">1280, 1280, 10, -, -, 128, no</column>
+<column name="- memset_arr3">127, 127, 1, -, -, 128, no</column>
+<column name="- Loop 6">3072, 3072, 24, -, -, 128, no</column>
+<column name="- memset_arr4">127, 127, 1, -, -, 128, no</column>
+<column name="- Loop 8">36096, 36096, 282, -, -, 128, no</column>
+<column name=" + Loop 8.1">280, 280, 10, -, -, 28, no</column>
+<column name="- memset_arr5">127, 127, 1, -, -, 128, no</column>
+<column name="- Loop 10">164096, 164096, 1282, -, -, 128, no</column>
+<column name=" + Loop 10.1">1280, 1280, 10, -, -, 128, no</column>
+<column name="- memset_arr6">127, 127, 1, -, -, 128, no</column>
+<column name="- Loop 12">3072, 3072, 24, -, -, 128, no</column>
+<column name="- memset_arr7">127, 127, 1, -, -, 128, no</column>
+<column name="- Loop 14">36096, 36096, 282, -, -, 128, no</column>
+<column name=" + Loop 14.1">280, 280, 10, -, -, 28, no</column>
+<column name="- memset_arr8">127, 127, 1, -, -, 128, no</column>
+<column name="- Loop 16">164096, 164096, 1282, -, -, 128, no</column>
+<column name=" + Loop 16.1">1280, 1280, 10, -, -, 128, no</column>
+<column name="- memset_arr9">127, 127, 1, -, -, 128, no</column>
+<column name="- Loop 18">2432, 2432, 19, -, -, 128, no</column>
+<column name="- memset_arr10">127, 127, 1, -, -, 128, no</column>
+<column name="- Loop 20">36096, 36096, 282, -, -, 128, no</column>
+<column name=" + Loop 20.1">280, 280, 10, -, -, 28, no</column>
+<column name="- memset_arr11">127, 127, 1, -, -, 128, no</column>
+<column name="- Loop 22">164096, 164096, 1282, -, -, 128, no</column>
+<column name=" + Loop 22.1">1280, 1280, 10, -, -, 128, no</column>
+<column name="- memset_arr12">127, 127, 1, -, -, 128, no</column>
+<column name="- Loop 24">3072, 3072, 24, -, -, 128, no</column>
+<column name="- Loop 25">768, 768, 6, -, -, 128, no</column>
+<column name="- Loop 26">1280, 1280, 10, -, -, 128, no</column>
+<column name="- memset_arr13">127, 127, 1, -, -, 128, no</column>
+<column name="- Loop 28">1280, 1280, 10, -, -, 128, no</column>
+<column name="- Loop 29">768, 768, 6, -, -, 128, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

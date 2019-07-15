@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog>
+        <logs message="ERROR: [HLS 200-70] Pre-synthesis failed.&#xD;&#xA;command 'ap_source' returned error code&#xD;&#xA;    while executing&#xD;&#xA;&quot;source C:/Users/dongzw/Desktop/fpga/c/hls/pipeline/csynth.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main C:/Users/dongzw/Desktop/fpga/c/hls/pipeline/csynth.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="hls" solutionName="pipeline" date="2019-07-15T22:21:31.120+0800"/>
+        <logs message="ERROR: [XFORM 203-711] Array 'img_line' failed dataflow checking: it cannot be read by more than 1 process." projectName="hls" solutionName="pipeline" date="2019-07-15T22:21:30.989+0800"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [XFORM 203-713] Argument 'img_line' has read operations in process function 'lstm_forward_once_Loop_memset_arr2_proc9'." projectName="hls" solutionName="pipeline" date="2019-07-15T22:21:31.004+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] Argument 'img_line' has read operations in process function 'lstm_forward_once_Loop_memset_arr1_proc'." projectName="hls" solutionName="pipeline" date="2019-07-15T22:21:30.996+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'arr1' should be updated in process function 'lstm_forward_once_Loop_memset_arr1_proc', otherwise it may not be synthesized correctly." projectName="hls" solutionName="pipeline" date="2019-07-15T22:21:30.982+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file src/rnn.cpp" projectName="hls" solutionName="pipeline" date="2019-07-15T22:21:24.626+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 214-114] Only function calls and local variable declarations are allowed in a dataflow region: src/rnn.cpp:152:5" projectName="hls" solutionName="pipeline" date="2019-07-15T22:21:19.544+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

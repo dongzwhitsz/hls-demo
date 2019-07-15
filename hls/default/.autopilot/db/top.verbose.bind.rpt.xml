@@ -1,0 +1,53 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'top'" level="0">
+<item name = "Date">Mon Jul 15 22:02:50 2019
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">hls</item>
+<item name = "Solution">default</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg400-3</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.354, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">23080057, 23080057, 23080057, 23080057, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_lstm_forward_once_fu_220">lstm_forward_once, 818192, 818192, 818192, 818192, none</column>
+<column name="grp_dense_forward_fu_256">dense_forward, 148610, 148610, 148610, 148610, none</column>
+<column name="grp_softmax_forward_fu_268">softmax_forward, 11612, 11612, 11612, 11612, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">10248, 10248, 366, -, -, 28, no</column>
+<column name=" + Loop 1.1">364, 364, 13, -, -, 28, no</column>
+<column name="- Loop 2">128, 128, 1, -, -, 128, no</column>
+<column name="- Loop 3">22909432, 22909432, 818194, -, -, 28, no</column>
+<column name="- Loop 4">20, 20, 2, -, -, 10, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

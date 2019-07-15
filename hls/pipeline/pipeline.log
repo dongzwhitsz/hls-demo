@@ -1,0 +1,763 @@
+==============================================================
+File generated on Mon Jul 15 22:09:40 +0800 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-3'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'src/rnn.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 105.051 ; gain = 19.785
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 105.051 ; gain = 19.785
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 116.766 ; gain = 31.500
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'img_preprocess' into 'top' (src/rnn.cpp:85) automatically.
+INFO: [XFORM 203-602] Inlining function 'lstm_forward' into 'top' (src/rnn.cpp:86) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 126.617 ; gain = 41.352
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'lstm_forward_once' (src/rnn.cpp:147).
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label2' (src/rnn.cpp:155) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label3' (src/rnn.cpp:164) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label4' (src/rnn.cpp:187) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label5' (src/rnn.cpp:196) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label6' (src/rnn.cpp:203) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label7' (src/rnn.cpp:219) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label8' (src/rnn.cpp:228) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label9' (src/rnn.cpp:235) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label10' (src/rnn.cpp:252) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label11' (src/rnn.cpp:261) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label12' (src/rnn.cpp:268) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label13' (src/rnn.cpp:283) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label14' (src/rnn.cpp:288) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label15' (src/rnn.cpp:294) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label16' (src/rnn.cpp:307) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'memset_arr1' in function 'lstm_forward_once' completely with a factor of 127.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/rnn.cpp:152) in function 'lstm_forward_once' completely with a factor of 128.
+INFO: [HLS 200-489] Unrolling loop 'lstm_forward_once_label2' (src/rnn.cpp:155) in function 'lstm_forward_once' completely with a factor of 28.
+INFO: [HLS 200-489] Unrolling loop 'memset_arr2' in function 'lstm_forward_once' completely with a factor of 127.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (src/rnn.cpp:161) in function 'lstm_forward_once' completely with a factor of 128.
+ERROR: [XFORM 203-504] Stop unrolling loop 'Loop-4' (src/rnn.cpp:161) in function 'lstm_forward_once' because it may cause large runtime and excessive memory usage due to increase in code size. Please avoid unrolling the loop or form sub-functions for code in the loop body.
+ERROR: [HLS 200-70] Pre-synthesis failed.
+==============================================================
+File generated on Mon Jul 15 22:10:57 +0800 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-3'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'src/rnn.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 105.070 ; gain = 19.645
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 105.070 ; gain = 19.645
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 116.305 ; gain = 30.879
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'img_preprocess' into 'top' (src/rnn.cpp:85) automatically.
+INFO: [XFORM 203-602] Inlining function 'lstm_forward' into 'top' (src/rnn.cpp:86) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 125.992 ; gain = 40.566
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'lstm_forward_once' (src/rnn.cpp:147).
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label2' (src/rnn.cpp:155) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label4' (src/rnn.cpp:187) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label5' (src/rnn.cpp:196) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label6' (src/rnn.cpp:203) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label7' (src/rnn.cpp:219) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label8' (src/rnn.cpp:228) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label9' (src/rnn.cpp:235) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label10' (src/rnn.cpp:252) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label11' (src/rnn.cpp:261) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label12' (src/rnn.cpp:268) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label13' (src/rnn.cpp:283) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label14' (src/rnn.cpp:288) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label15' (src/rnn.cpp:294) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label16' (src/rnn.cpp:307) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'memset_arr1' in function 'lstm_forward_once' completely with a factor of 127.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/rnn.cpp:152) in function 'lstm_forward_once' completely with a factor of 128.
+INFO: [HLS 200-489] Unrolling loop 'lstm_forward_once_label2' (src/rnn.cpp:155) in function 'lstm_forward_once' completely with a factor of 28.
+INFO: [HLS 200-489] Unrolling loop 'memset_arr2' in function 'lstm_forward_once' completely with a factor of 127.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (src/rnn.cpp:161) in function 'lstm_forward_once' completely with a factor of 128.
+ERROR: [XFORM 203-504] Stop unrolling loop 'Loop-4' (src/rnn.cpp:161) in function 'lstm_forward_once' because it may cause large runtime and excessive memory usage due to increase in code size. Please avoid unrolling the loop or form sub-functions for code in the loop body.
+ERROR: [HLS 200-70] Pre-synthesis failed.
+==============================================================
+File generated on Mon Jul 15 22:12:29 +0800 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-3'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'src/rnn.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 105.027 ; gain = 20.219
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 105.027 ; gain = 20.219
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 116.578 ; gain = 31.770
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'img_preprocess' into 'top' (src/rnn.cpp:85) automatically.
+INFO: [XFORM 203-602] Inlining function 'lstm_forward' into 'top' (src/rnn.cpp:86) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 126.195 ; gain = 41.387
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'lstm_forward_once' (src/rnn.cpp:147).
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label2' (src/rnn.cpp:155) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label4' (src/rnn.cpp:187) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label5' (src/rnn.cpp:196) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label6' (src/rnn.cpp:203) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label7' (src/rnn.cpp:219) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label8' (src/rnn.cpp:228) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label9' (src/rnn.cpp:235) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label10' (src/rnn.cpp:252) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label11' (src/rnn.cpp:261) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label12' (src/rnn.cpp:268) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label13' (src/rnn.cpp:283) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label14' (src/rnn.cpp:288) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label15' (src/rnn.cpp:294) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'lstm_forward_once_label16' (src/rnn.cpp:307) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'memset_arr1' in function 'lstm_forward_once' completely with a factor of 127.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (src/rnn.cpp:152) in function 'lstm_forward_once' completely with a factor of 128.
+INFO: [HLS 200-489] Unrolling loop 'lstm_forward_once_label2' (src/rnn.cpp:155) in function 'lstm_forward_once' completely with a factor of 28.
+INFO: [HLS 200-489] Unrolling loop 'memset_arr2' in function 'lstm_forward_once' completely with a factor of 127.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (src/rnn.cpp:161) in function 'lstm_forward_once' completely with a factor of 128.
+ERROR: [XFORM 203-504] Stop unrolling loop 'Loop-4' (src/rnn.cpp:161) in function 'lstm_forward_once' because it may cause large runtime and excessive memory usage due to increase in code size. Please avoid unrolling the loop or form sub-functions for code in the loop body.
+ERROR: [HLS 200-70] Pre-synthesis failed.
+==============================================================
+File generated on Mon Jul 15 22:14:07 +0800 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-3'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'src/rnn.cpp' ... 
+WARNING: [HLS 214-113] Variables defined outside dataflow region are not supported: src/rnn.cpp:87:18
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file src/rnn.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 104.754 ; gain = 19.637
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 104.754 ; gain = 19.637
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 116.445 ; gain = 31.328
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 126.289 ; gain = 41.172
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (src/rnn.cpp:90) to a process function for dataflow in function 'top'.
+ERROR: [XFORM 203-711] Argument 'img' failed dataflow checking: Cannot communicate over function parameter.
+WARNING: [XFORM 203-713] Argument 'img' has read and write operations in process function 'img_preprocess'.
+WARNING: [XFORM 203-713] Argument 'img' has read operations in process function 'lstm_forward'.
+ERROR: [XFORM 203-711] Non-internal global variable 'h'  failed dataflow checking: it can only be read in one process function.
+WARNING: [XFORM 203-713] Non-internal global variable 'h' has read and write operations in process function 'lstm_forward'.
+WARNING: [XFORM 203-713] Non-internal global variable 'h' has read operations in process function 'dense_forward'.
+WARNING: [XFORM 203-713] All the elements of global array 'h'  should be updated in process function 'lstm_forward', otherwise it may not be synthesized correctly.
+ERROR: [XFORM 203-711] Non-internal global variable 'dense_output'  failed dataflow checking: it can only be read in one process function.
+WARNING: [XFORM 203-713] Non-internal global variable 'dense_output' has read and write operations in process function 'dense_forward'.
+WARNING: [XFORM 203-713] Non-internal global variable 'dense_output' has read operations in process function 'softmax_forward'.
+WARNING: [XFORM 203-713] All the elements of global array 'dense_output'  should be updated in process function 'dense_forward', otherwise it may not be synthesized correctly.
+ERROR: [XFORM 203-711] Internal global variable 'softmax_output'  failed dataflow checking: it can only be read in one process function.
+WARNING: [XFORM 203-713] Internal global variable 'softmax_output' has read and write operations in process function 'softmax_forward'.
+WARNING: [XFORM 203-713] Internal global variable 'softmax_output' has read operations in process function 'Loop_1_proc'.
+WARNING: [XFORM 203-713] All the elements of global array 'softmax_output'  should be updated in process function 'softmax_forward', otherwise it may not be synthesized correctly.
+ERROR: [HLS 200-70] Pre-synthesis failed.
+==============================================================
+File generated on Mon Jul 15 22:14:43 +0800 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-3'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'src/rnn.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 104.438 ; gain = 19.742
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 104.438 ; gain = 19.742
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 116.043 ; gain = 31.348
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'img_preprocess' into 'top' (src/rnn.cpp:85) automatically.
+INFO: [XFORM 203-602] Inlining function 'lstm_forward' into 'top' (src/rnn.cpp:86) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 125.477 ; gain = 40.781
+INFO: [XFORM 203-602] Inlining function 'img_preprocess' into 'top' (src/rnn.cpp:85) automatically.
+INFO: [XFORM 203-602] Inlining function 'lstm_forward' into 'top' (src/rnn.cpp:86) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 146.852 ; gain = 62.156
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 171.813 ; gain = 87.117
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+WARNING: [SYN 201-107] Renaming port name 'top/output' to 'top/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lstm_forward_once' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 17.553 seconds; current allocated memory: 128.405 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 37 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.691 seconds; current allocated memory: 130.872 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dense_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.85 seconds; current allocated memory: 131.147 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.122 seconds; current allocated memory: 131.355 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'softmax_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.169 seconds; current allocated memory: 131.484 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.128 seconds; current allocated memory: 131.676 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.178 seconds; current allocated memory: 131.851 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.556 seconds; current allocated memory: 132.277 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lstm_forward_once' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_kernel_f' to 'lstm_forward_oncebkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_recurrent_kerne_3' to 'lstm_forward_oncecud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_bias_f' to 'lstm_forward_oncedEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_kernel_i' to 'lstm_forward_onceeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_recurrent_kerne_4' to 'lstm_forward_oncefYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_bias_i' to 'lstm_forward_onceg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_kernel_c' to 'lstm_forward_oncehbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_recurrent_kerne_1' to 'lstm_forward_onceibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_bias_c' to 'lstm_forward_oncejbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_kernel_o' to 'lstm_forward_oncekbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_recurrent_kerne' to 'lstm_forward_oncelbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_bias_o' to 'lstm_forward_oncemb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr1' to 'lstm_forward_oncencg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr2' to 'lstm_forward_onceocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr3' to 'lstm_forward_oncepcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr4' to 'lstm_forward_onceqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr5' to 'lstm_forward_oncercU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr6' to 'lstm_forward_oncesc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr7' to 'lstm_forward_oncetde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr8' to 'lstm_forward_onceudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr9' to 'lstm_forward_oncevdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr10' to 'lstm_forward_oncewdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr11' to 'lstm_forward_oncexdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr12' to 'lstm_forward_onceyd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr13' to 'lstm_forward_oncezec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fadd_32ns_32ns_32_4_full_dsp_1' to 'top_fadd_32ns_32nAem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fmul_32ns_32ns_32_3_max_dsp_1' to 'top_fmul_32ns_32nBew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fptrunc_64ns_32_1_1' to 'top_fptrunc_64ns_CeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fpext_32ns_64_1_1' to 'top_fpext_32ns_64DeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fcmp_32ns_32ns_1_1_1' to 'top_fcmp_32ns_32nEe0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_dadd_64ns_64ns_64_5_full_dsp_1' to 'top_dadd_64ns_64nFfa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_dmul_64ns_64ns_64_5_max_dsp_1' to 'top_dmul_64ns_64nGfk' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'top_dadd_64ns_64nFfa': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_dmul_64ns_64nGfk': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fadd_32ns_32nAem': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fcmp_32ns_32nEe0': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fmul_32ns_32nBew': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fpext_32ns_64DeQ': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fptrunc_64ns_CeG': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lstm_forward_once'.
+INFO: [HLS 200-111]  Elapsed time: 1.1 seconds; current allocated memory: 136.619 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dense_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'dense_forward_dense_kernel' to 'dense_forward_denHfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dense_forward_dense_bias' to 'dense_forward_denIfE' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'top_fadd_32ns_32nAem': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fcmp_32ns_32nEe0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fmul_32ns_32nBew': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_forward'.
+INFO: [HLS 200-111]  Elapsed time: 2.326 seconds; current allocated memory: 137.857 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'softmax_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'softmax_forward_softmax_kernel' to 'softmax_forward_sJfO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'softmax_forward_softmax_bias' to 'softmax_forward_sKfY' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'top_fadd_32ns_32nAem': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fmul_32ns_32nBew': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'softmax_forward'.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 138.304 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/img' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Global array 'h' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'dense_output' will not be exposed as RTL port.
+INFO: [RTGEN 206-100] Generating core module 'top_dadd_64ns_64nFfa': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_dmul_64ns_64nGfk': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fpext_32ns_64DeQ': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fptrunc_64ns_CeG': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.661 seconds; current allocated memory: 139.141 MB.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncebkb_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncecud_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncedEe_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_onceeOg_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncefYi_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_onceg8j_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncehbi_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_onceibs_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncejbC_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncekbM_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncelbW_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncemb6_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'lstm_forward_oncencg_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-279] Implementing memory 'dense_forward_denHfu_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'dense_forward_denIfE_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'softmax_forward_sJfO_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'softmax_forward_sKfY_rom' using distributed ROMs.
+INFO: [RTMG 210-278] Implementing memory 'top_c_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'top_softmax_output_ram (RAM)' using distributed RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 217.520 ; gain = 132.824
+INFO: [SYSC 207-301] Generating SystemC RTL for top.
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-112] Total elapsed time: 39.377 seconds; peak allocated memory: 139.141 MB.
+==============================================================
+File generated on Mon Jul 15 22:16:02 +0800 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-3'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'src/rnn.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 104.746 ; gain = 19.629
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 104.746 ; gain = 19.629
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 116.488 ; gain = 31.371
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'img_preprocess' into 'top' (src/rnn.cpp:85) automatically.
+INFO: [XFORM 203-602] Inlining function 'lstm_forward' into 'top' (src/rnn.cpp:86) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 126.164 ; gain = 41.047
+INFO: [XFORM 203-602] Inlining function 'img_preprocess' into 'top' (src/rnn.cpp:85) automatically.
+INFO: [XFORM 203-602] Inlining function 'lstm_forward' into 'top' (src/rnn.cpp:86) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 146.895 ; gain = 61.777
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (src/rnn.cpp:123:18) in function 'top'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 172.484 ; gain = 87.367
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+WARNING: [SYN 201-107] Renaming port name 'top/output' to 'top/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lstm_forward_once' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 18.059 seconds; current allocated memory: 128.559 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 37 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.648 seconds; current allocated memory: 130.990 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dense_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.778 seconds; current allocated memory: 131.265 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.112 seconds; current allocated memory: 131.473 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'softmax_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.178 seconds; current allocated memory: 131.602 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.107 seconds; current allocated memory: 131.794 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'L_inner'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 13.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.219 seconds; current allocated memory: 132.019 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.579 seconds; current allocated memory: 132.478 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lstm_forward_once' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_kernel_f' to 'lstm_forward_oncebkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_recurrent_kerne_3' to 'lstm_forward_oncecud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_bias_f' to 'lstm_forward_oncedEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_kernel_i' to 'lstm_forward_onceeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_recurrent_kerne_4' to 'lstm_forward_oncefYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_bias_i' to 'lstm_forward_onceg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_kernel_c' to 'lstm_forward_oncehbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_recurrent_kerne_1' to 'lstm_forward_onceibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_bias_c' to 'lstm_forward_oncejbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_kernel_o' to 'lstm_forward_oncekbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_recurrent_kerne' to 'lstm_forward_oncelbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_bias_o' to 'lstm_forward_oncemb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr1' to 'lstm_forward_oncencg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr2' to 'lstm_forward_onceocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr3' to 'lstm_forward_oncepcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr4' to 'lstm_forward_onceqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr5' to 'lstm_forward_oncercU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr6' to 'lstm_forward_oncesc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr7' to 'lstm_forward_oncetde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr8' to 'lstm_forward_onceudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr9' to 'lstm_forward_oncevdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr10' to 'lstm_forward_oncewdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr11' to 'lstm_forward_oncexdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr12' to 'lstm_forward_onceyd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr13' to 'lstm_forward_oncezec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fadd_32ns_32ns_32_4_full_dsp_1' to 'top_fadd_32ns_32nAem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fmul_32ns_32ns_32_3_max_dsp_1' to 'top_fmul_32ns_32nBew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fptrunc_64ns_32_1_1' to 'top_fptrunc_64ns_CeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fpext_32ns_64_1_1' to 'top_fpext_32ns_64DeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fcmp_32ns_32ns_1_1_1' to 'top_fcmp_32ns_32nEe0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_dadd_64ns_64ns_64_5_full_dsp_1' to 'top_dadd_64ns_64nFfa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_dmul_64ns_64ns_64_5_max_dsp_1' to 'top_dmul_64ns_64nGfk' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'top_dadd_64ns_64nFfa': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_dmul_64ns_64nGfk': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fadd_32ns_32nAem': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fcmp_32ns_32nEe0': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fmul_32ns_32nBew': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fpext_32ns_64DeQ': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fptrunc_64ns_CeG': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lstm_forward_once'.
+INFO: [HLS 200-111]  Elapsed time: 1.121 seconds; current allocated memory: 136.835 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dense_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'dense_forward_dense_kernel' to 'dense_forward_denHfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dense_forward_dense_bias' to 'dense_forward_denIfE' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'top_fadd_32ns_32nAem': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fcmp_32ns_32nEe0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fmul_32ns_32nBew': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_forward'.
+INFO: [HLS 200-111]  Elapsed time: 2.198 seconds; current allocated memory: 138.089 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'softmax_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'softmax_forward_softmax_kernel' to 'softmax_forward_sJfO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'softmax_forward_softmax_bias' to 'softmax_forward_sKfY' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'top_fadd_32ns_32nAem': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fmul_32ns_32nBew': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'softmax_forward'.
+INFO: [HLS 200-111]  Elapsed time: 0.393 seconds; current allocated memory: 138.551 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/img' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Global array 'h' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'dense_output' will not be exposed as RTL port.
+INFO: [RTGEN 206-100] Generating core module 'top_dadd_64ns_64nFfa': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_dmul_64ns_64nGfk': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fpext_32ns_64DeQ': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fptrunc_64ns_CeG': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 139.499 MB.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncebkb_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncecud_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncedEe_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_onceeOg_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncefYi_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_onceg8j_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncehbi_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_onceibs_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncejbC_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncekbM_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncelbW_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncemb6_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'lstm_forward_oncencg_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-279] Implementing memory 'dense_forward_denHfu_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'dense_forward_denIfE_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'softmax_forward_sJfO_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'softmax_forward_sKfY_rom' using distributed ROMs.
+INFO: [RTMG 210-278] Implementing memory 'top_c_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'top_softmax_output_ram (RAM)' using distributed RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 219.242 ; gain = 134.125
+INFO: [SYSC 207-301] Generating SystemC RTL for top.
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-112] Total elapsed time: 39.384 seconds; peak allocated memory: 139.499 MB.
+==============================================================
+File generated on Mon Jul 15 22:19:28 +0800 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-3'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'src/rnn.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 104.703 ; gain = 18.961
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 104.703 ; gain = 18.961
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 116.238 ; gain = 30.496
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'img_preprocess' into 'top' (src/rnn.cpp:85) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 125.980 ; gain = 40.238
+INFO: [XFORM 203-602] Inlining function 'img_preprocess' into 'top' (src/rnn.cpp:85) automatically.
+INFO: [XFORM 203-721] Extract dataflow region from loop lstm_forward_label1 (src/rnn.cpp:141)  of function 'lstm_forward'.
+INFO: [XFORM 203-712] Applying dataflow to function 'dataflow_in_loop_lstm_forward_label1', detected/extracted 1 process function(s): 
+	 'lstm_forward_once'.
+INFO: [XFORM 203-602] Inlining function 'lstm_forward' into 'top' (src/rnn.cpp:86) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 147.035 ; gain = 61.293
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (src/rnn.cpp:123:18) in function 'top'.
+WARNING: [XFORM 203-631] Renaming function 'dataflow_parent_loop_proc' to 'dataflow_parent_loop.1' (src/rnn.cpp:140:48)
+WARNING: [XFORM 203-631] Renaming function 'dataflow_in_loop_lstm_forward_label1' to 'dataflow_in_loop_lst' (src/rnn.cpp:142:9)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 191.688 ; gain = 105.945
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+WARNING: [SYN 201-103] Legalizing function name 'dataflow_parent_loop.1' to 'dataflow_parent_loop_1'.
+WARNING: [SYN 201-107] Renaming port name 'top/output' to 'top/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lstm_forward_once' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 18.532 seconds; current allocated memory: 148.059 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 37 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.825 seconds; current allocated memory: 150.505 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_in_loop_lst' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.766 seconds; current allocated memory: 150.645 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.169 seconds; current allocated memory: 150.749 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_parent_loop_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.323 seconds; current allocated memory: 150.852 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.171 seconds; current allocated memory: 150.976 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dense_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.378 seconds; current allocated memory: 151.234 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.119 seconds; current allocated memory: 151.442 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'softmax_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.167 seconds; current allocated memory: 151.586 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.114 seconds; current allocated memory: 151.778 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'L_inner'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 13.
+INFO: [SCHED 204-61] Pipelining loop 'top_label21'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.211 seconds; current allocated memory: 151.961 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.66 seconds; current allocated memory: 152.427 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lstm_forward_once' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_kernel_f' to 'lstm_forward_oncebkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_recurrent_kerne_3' to 'lstm_forward_oncecud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_bias_f' to 'lstm_forward_oncedEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_kernel_i' to 'lstm_forward_onceeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_recurrent_kerne_4' to 'lstm_forward_oncefYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_bias_i' to 'lstm_forward_onceg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_kernel_c' to 'lstm_forward_oncehbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_recurrent_kerne_1' to 'lstm_forward_onceibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_bias_c' to 'lstm_forward_oncejbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_kernel_o' to 'lstm_forward_oncekbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_recurrent_kerne' to 'lstm_forward_oncelbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_bias_o' to 'lstm_forward_oncemb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr1' to 'lstm_forward_oncencg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr2' to 'lstm_forward_onceocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr3' to 'lstm_forward_oncepcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr4' to 'lstm_forward_onceqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr5' to 'lstm_forward_oncercU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr6' to 'lstm_forward_oncesc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr7' to 'lstm_forward_oncetde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr8' to 'lstm_forward_onceudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr9' to 'lstm_forward_oncevdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr10' to 'lstm_forward_oncewdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr11' to 'lstm_forward_oncexdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr12' to 'lstm_forward_onceyd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr13' to 'lstm_forward_oncezec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fadd_32ns_32ns_32_4_full_dsp_1' to 'top_fadd_32ns_32nAem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fmul_32ns_32ns_32_3_max_dsp_1' to 'top_fmul_32ns_32nBew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fptrunc_64ns_32_1_1' to 'top_fptrunc_64ns_CeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fpext_32ns_64_1_1' to 'top_fpext_32ns_64DeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fcmp_32ns_32ns_1_1_1' to 'top_fcmp_32ns_32nEe0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_dadd_64ns_64ns_64_5_full_dsp_1' to 'top_dadd_64ns_64nFfa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_dmul_64ns_64ns_64_5_max_dsp_1' to 'top_dmul_64ns_64nGfk' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'top_dadd_64ns_64nFfa': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_dmul_64ns_64nGfk': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fadd_32ns_32nAem': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fcmp_32ns_32nEe0': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fmul_32ns_32nBew': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fpext_32ns_64DeQ': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fptrunc_64ns_CeG': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lstm_forward_once'.
+INFO: [HLS 200-111]  Elapsed time: 1.27 seconds; current allocated memory: 156.806 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_in_loop_lst' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_in_loop_lst'.
+INFO: [HLS 200-111]  Elapsed time: 2.322 seconds; current allocated memory: 157.739 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_parent_loop_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_parent_loop_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.451 seconds; current allocated memory: 158.065 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dense_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'dense_forward_dense_kernel' to 'dense_forward_denHfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dense_forward_dense_bias' to 'dense_forward_denIfE' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'top_fadd_32ns_32nAem': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fcmp_32ns_32nEe0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fmul_32ns_32nBew': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_forward'.
+INFO: [HLS 200-111]  Elapsed time: 0.598 seconds; current allocated memory: 158.636 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'softmax_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'softmax_forward_softmax_kernel' to 'softmax_forward_sJfO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'softmax_forward_softmax_bias' to 'softmax_forward_sKfY' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'top_fadd_32ns_32nAem': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fmul_32ns_32nBew': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'softmax_forward'.
+INFO: [HLS 200-111]  Elapsed time: 0.418 seconds; current allocated memory: 159.152 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/img' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Global array 'h' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'dense_output' will not be exposed as RTL port.
+INFO: [RTGEN 206-100] Generating core module 'top_dadd_64ns_64nFfa': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_dmul_64ns_64nGfk': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fpext_32ns_64DeQ': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fptrunc_64ns_CeG': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.509 seconds; current allocated memory: 160.176 MB.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncebkb_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncecud_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncedEe_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_onceeOg_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncefYi_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_onceg8j_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncehbi_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_onceibs_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncejbC_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncekbM_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncelbW_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncemb6_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'lstm_forward_oncencg_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-279] Implementing memory 'dense_forward_denHfu_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'dense_forward_denIfE_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'softmax_forward_sJfO_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'softmax_forward_sKfY_rom' using distributed ROMs.
+INFO: [RTMG 210-278] Implementing memory 'top_c_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'top_softmax_output_ram (RAM)' using distributed RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:25 ; elapsed = 00:00:43 . Memory (MB): peak = 240.828 ; gain = 155.086
+INFO: [SYSC 207-301] Generating SystemC RTL for top.
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-112] Total elapsed time: 43.298 seconds; peak allocated memory: 160.176 MB.
+==============================================================
+File generated on Mon Jul 15 22:21:14 +0800 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-3'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'src/rnn.cpp' ... 
+WARNING: [HLS 214-114] Only function calls and local variable declarations are allowed in a dataflow region: src/rnn.cpp:152:5
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file src/rnn.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 104.781 ; gain = 19.707
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 104.781 ; gain = 19.707
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 116.469 ; gain = 31.395
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'img_preprocess' into 'top' (src/rnn.cpp:85) automatically.
+INFO: [XFORM 203-602] Inlining function 'lstm_forward' into 'top' (src/rnn.cpp:86) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 126.277 ; gain = 41.203
+INFO: [XFORM 203-602] Inlining function 'img_preprocess' into 'top' (src/rnn.cpp:85) automatically.
+INFO: [XFORM 203-602] Inlining function 'lstm_forward' into 'top' (src/rnn.cpp:86) automatically.
+WARNING: [XFORM 203-713] All the elements of global array 'arr1' should be updated in process function 'lstm_forward_once_Loop_memset_arr1_proc', otherwise it may not be synthesized correctly.
+ERROR: [XFORM 203-711] Array 'img_line' failed dataflow checking: it cannot be read by more than 1 process.
+WARNING: [XFORM 203-713] Argument 'img_line' has read operations in process function 'lstm_forward_once_Loop_memset_arr1_proc'.
+WARNING: [XFORM 203-713] Argument 'img_line' has read operations in process function 'lstm_forward_once_Loop_memset_arr2_proc9'.
+ERROR: [HLS 200-70] Pre-synthesis failed.

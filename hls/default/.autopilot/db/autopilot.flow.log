@@ -1,0 +1,766 @@
+INFO-FLOW: Workspace C:/Users/dongzw/Desktop/fpga/c/hls/default opened at Mon Jul 15 22:02:26 +0800 2019
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.133 sec.
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.136 sec.
+Command     ap_source done; 0.136 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg400-3 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-3 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed fast 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-3'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed fast 
+Command   open_solution done; 0.255 sec.
+Execute   set_part xc7z020clg400-3 -tool vivado 
+Execute     add_library xilinx/zynq/zynq:xc7z020:clg400:-3 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed fast 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     config_compile -blackbox  
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'src/rnn.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling src/rnn.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted src/rnn.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "src/rnn.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "D:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pp.0.cpp" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E src/rnn.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2018.3/common/technology/autopilot -I D:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pp.0.cpp
+Command       clang done; 0.839 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.883 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "D:/Xilinx/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "D:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pp.0.cpp"  -o "C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/useless.bc"  
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2018.3/common/technology/autopilot -I D:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pp.0.cpp -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/useless.bc
+Command       clang done; 1.381 sec.
+INFO-FLOW: Done: GCC PP time: 3.1 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pp.0.cpp std=gnu++98 -directive=C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.405 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pp.0.cpp std=gnu++98 -directive=C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/all.directive.json 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.435 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr D:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/xilinx-dataflow-lawyer.rnn.pp.0.cpp.diag.yml C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/xilinx-dataflow-lawyer.rnn.pp.0.cpp.out.log 2> C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/xilinx-dataflow-lawyer.rnn.pp.0.cpp.err.log 
+Command       ap_eval done; 0.709 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/tidy-3.1.rnn.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/tidy-3.1.rnn.pp.0.cpp.out.log 2> C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/tidy-3.1.rnn.pp.0.cpp.err.log 
+Command         ap_eval done; 0.948 sec.
+Execute         ap_eval exec -ignorestderr D:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/xilinx-legacy-rewriter.rnn.pp.0.cpp.out.log 2> C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/xilinx-legacy-rewriter.rnn.pp.0.cpp.err.log 
+Command         ap_eval done; 0.66 sec.
+Command       tidy_31 done; 1.634 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 2.8 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.455 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "D:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "D:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.bc" 
+INFO-FLOW: exec D:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain D:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I D:/Xilinx/Vivado/2018.3/common/technology/autopilot -I D:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.bc
+Command       clang done; 1.332 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/rnn.g.bc -hls-opt -except-internalize top -LD:/Xilinx/Vivado/2018.3/win64/lib -lhlsm -lhlsmc++ -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.g 
+Command       llvm-ld done; 6.149 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 104.707 ; gain = 19.637
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 104.707 ; gain = 19.637
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.pp.bc -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.183 sec.
+Execute         llvm-ld C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.pp.0.bc -disable-opt -LD:/Xilinx/Vivado/2018.3/win64/lib -lfloatconversion -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.468 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top top -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.g.0.bc -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.608 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 116.105 ; gain = 31.035
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.g.1.bc -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'img_preprocess' into 'top' (src/rnn.cpp:85) automatically.
+INFO: [XFORM 203-602] Inlining function 'lstm_forward' into 'top' (src/rnn.cpp:86) automatically.
+Command         transform done; 0.575 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.g.2.prechk.bc -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 125.488 ; gain = 40.418
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.g.1.bc to C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.o.1.bc -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-602] Inlining function 'img_preprocess' into 'top' (src/rnn.cpp:85) automatically.
+INFO: [XFORM 203-602] Inlining function 'lstm_forward' into 'top' (src/rnn.cpp:86) automatically.
+Command         transform done; 0.709 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.o.1.tmp.bc -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.224 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 146.398 ; gain = 61.328
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.o.2.bc -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Command         transform done; 1.41 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 172.203 ; gain = 87.133
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 4.258 sec.
+Command     elaborate done; 19.574 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+Execute       ap_set_top_model top 
+Execute       get_model_list top -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model top 
+Execute       preproc_iomode -model softmax_forward 
+Execute       preproc_iomode -model dense_forward 
+Execute       preproc_iomode -model lstm_forward_once 
+Execute       get_model_list top -filter all-wo-channel 
+INFO-FLOW: Model list for configure: lstm_forward_once dense_forward softmax_forward top
+INFO-FLOW: Configuring Module : lstm_forward_once ...
+Execute       set_default_model lstm_forward_once 
+Execute       apply_spec_resource_limit lstm_forward_once 
+INFO-FLOW: Configuring Module : dense_forward ...
+Execute       set_default_model dense_forward 
+Execute       apply_spec_resource_limit dense_forward 
+INFO-FLOW: Configuring Module : softmax_forward ...
+Execute       set_default_model softmax_forward 
+Execute       apply_spec_resource_limit softmax_forward 
+INFO-FLOW: Configuring Module : top ...
+Execute       set_default_model top 
+Execute       apply_spec_resource_limit top 
+INFO-FLOW: Model list for preprocess: lstm_forward_once dense_forward softmax_forward top
+INFO-FLOW: Preprocessing Module: lstm_forward_once ...
+Execute       set_default_model lstm_forward_once 
+Execute       cdfg_preprocess -model lstm_forward_once 
+Execute       rtl_gen_preprocess lstm_forward_once 
+INFO-FLOW: Preprocessing Module: dense_forward ...
+Execute       set_default_model dense_forward 
+Execute       cdfg_preprocess -model dense_forward 
+Execute       rtl_gen_preprocess dense_forward 
+INFO-FLOW: Preprocessing Module: softmax_forward ...
+Execute       set_default_model softmax_forward 
+Execute       cdfg_preprocess -model softmax_forward 
+Execute       rtl_gen_preprocess softmax_forward 
+INFO-FLOW: Preprocessing Module: top ...
+Execute       set_default_model top 
+Execute       cdfg_preprocess -model top 
+Execute       rtl_gen_preprocess top 
+WARNING: [SYN 201-107] Renaming port name 'top/output' to 'top/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO-FLOW: Model list for synthesis: lstm_forward_once dense_forward softmax_forward top
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'lstm_forward_once' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model lstm_forward_once 
+Execute       schedule -model lstm_forward_once 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.698 sec.
+INFO: [HLS 200-111]  Elapsed time: 21.09 seconds; current allocated memory: 128.352 MB.
+Execute       report -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/lstm_forward_once.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 0 loops out of a total 37 loops have been pipelined in this design.
+Command       report done; 0.293 sec.
+Execute       db_write -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/lstm_forward_once.sched.adb -f 
+Command       db_write done; 0.163 sec.
+INFO-FLOW: Finish scheduling lstm_forward_once.
+Execute       set_default_model lstm_forward_once 
+Execute       bind -model lstm_forward_once 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=lstm_forward_once
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.212 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.693 seconds; current allocated memory: 130.813 MB.
+Execute       report -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/lstm_forward_once.verbose.bind.rpt -verbose -f 
+Command       report done; 0.463 sec.
+Execute       db_write -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/lstm_forward_once.bind.adb -f 
+Command       db_write done; 0.151 sec.
+INFO-FLOW: Finish binding lstm_forward_once.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dense_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model dense_forward 
+Execute       schedule -model dense_forward 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.699 seconds; current allocated memory: 131.071 MB.
+Execute       report -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/dense_forward.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/dense_forward.sched.adb -f 
+INFO-FLOW: Finish scheduling dense_forward.
+Execute       set_default_model dense_forward 
+Execute       bind -model dense_forward 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=dense_forward
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.112 seconds; current allocated memory: 131.276 MB.
+Execute       report -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/dense_forward.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/dense_forward.bind.adb -f 
+INFO-FLOW: Finish binding dense_forward.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'softmax_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model softmax_forward 
+Execute       schedule -model softmax_forward 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.203 seconds; current allocated memory: 131.403 MB.
+Execute       report -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/softmax_forward.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/softmax_forward.sched.adb -f 
+INFO-FLOW: Finish scheduling softmax_forward.
+Execute       set_default_model softmax_forward 
+Execute       bind -model softmax_forward 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=softmax_forward
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.121 seconds; current allocated memory: 131.591 MB.
+Execute       report -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/softmax_forward.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/softmax_forward.bind.adb -f 
+INFO-FLOW: Finish binding softmax_forward.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model top 
+Execute       schedule -model top 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.179 seconds; current allocated memory: 131.765 MB.
+Execute       report -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.sched.adb -f 
+INFO-FLOW: Finish scheduling top.
+Execute       set_default_model top 
+Execute       bind -model top 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=top
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.446 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.531 seconds; current allocated memory: 132.188 MB.
+Execute       report -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.verbose.bind.rpt -verbose -f 
+Command       report done; 0.36 sec.
+Execute       db_write -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.bind.adb -f 
+INFO-FLOW: Finish binding top.
+Execute       get_model_list top -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess lstm_forward_once 
+Execute       rtl_gen_preprocess dense_forward 
+Execute       rtl_gen_preprocess softmax_forward 
+Execute       rtl_gen_preprocess top 
+INFO-FLOW: Model list for RTL generation: lstm_forward_once dense_forward softmax_forward top
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'lstm_forward_once' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model lstm_forward_once -vendor xilinx -mg_file C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/lstm_forward_once.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_kernel_f' to 'lstm_forward_oncebkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_recurrent_kerne_3' to 'lstm_forward_oncecud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_bias_f' to 'lstm_forward_oncedEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_kernel_i' to 'lstm_forward_onceeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_recurrent_kerne_4' to 'lstm_forward_oncefYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_bias_i' to 'lstm_forward_onceg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_kernel_c' to 'lstm_forward_oncehbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_recurrent_kerne_1' to 'lstm_forward_onceibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_bias_c' to 'lstm_forward_oncejbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_kernel_o' to 'lstm_forward_oncekbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_recurrent_kerne' to 'lstm_forward_oncelbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_lstm_bias_o' to 'lstm_forward_oncemb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr1' to 'lstm_forward_oncencg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr2' to 'lstm_forward_onceocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr3' to 'lstm_forward_oncepcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr4' to 'lstm_forward_onceqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr5' to 'lstm_forward_oncercU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr6' to 'lstm_forward_oncesc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr7' to 'lstm_forward_oncetde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr8' to 'lstm_forward_onceudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr9' to 'lstm_forward_oncevdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr10' to 'lstm_forward_oncewdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr11' to 'lstm_forward_oncexdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr12' to 'lstm_forward_onceyd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'lstm_forward_once_arr13' to 'lstm_forward_oncezec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fadd_32ns_32ns_32_4_full_dsp_1' to 'top_fadd_32ns_32nAem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fmul_32ns_32ns_32_3_max_dsp_1' to 'top_fmul_32ns_32nBew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fptrunc_64ns_32_1_1' to 'top_fptrunc_64ns_CeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fpext_32ns_64_1_1' to 'top_fpext_32ns_64DeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_fcmp_32ns_32ns_1_1_1' to 'top_fcmp_32ns_32nEe0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_dadd_64ns_64ns_64_5_full_dsp_1' to 'top_dadd_64ns_64nFfa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'top_dmul_64ns_64ns_64_5_max_dsp_1' to 'top_dmul_64ns_64nGfk' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'top_dadd_64ns_64nFfa': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_dmul_64ns_64nGfk': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fadd_32ns_32nAem': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fcmp_32ns_32nEe0': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fmul_32ns_32nBew': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fpext_32ns_64DeQ': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fptrunc_64ns_CeG': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'lstm_forward_once'.
+Command       create_rtl_model done; 0.722 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.165 seconds; current allocated memory: 136.529 MB.
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl lstm_forward_once -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/systemc/lstm_forward_once -synmodules lstm_forward_once dense_forward softmax_forward top 
+Execute       gen_rtl lstm_forward_once -style xilinx -f -lang vhdl -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/vhdl/lstm_forward_once 
+Execute       gen_rtl lstm_forward_once -style xilinx -f -lang vlog -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/verilog/lstm_forward_once 
+Execute       gen_tb_info lstm_forward_once -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/lstm_forward_once -p C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db 
+Command       gen_tb_info done; 0.105 sec.
+Execute       report -model lstm_forward_once -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/report/lstm_forward_once_csynth.rpt -f 
+Command       report done; 0.127 sec.
+Execute       report -model lstm_forward_once -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/report/lstm_forward_once_csynth.xml -f -x 
+Command       report done; 0.124 sec.
+Execute       report -model lstm_forward_once -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/lstm_forward_once.verbose.rpt -verbose -f 
+Command       report done; 0.563 sec.
+Execute       db_write -model lstm_forward_once -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/lstm_forward_once.adb -f 
+Command       db_write done; 0.364 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dense_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model dense_forward -vendor xilinx -mg_file C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/dense_forward.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'dense_forward_dense_kernel' to 'dense_forward_denHfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'dense_forward_dense_bias' to 'dense_forward_denIfE' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'top_fadd_32ns_32nAem': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fcmp_32ns_32nEe0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fmul_32ns_32nBew': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_forward'.
+Command       create_rtl_model done; 0.132 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.252 seconds; current allocated memory: 137.782 MB.
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl dense_forward -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/systemc/dense_forward -synmodules lstm_forward_once dense_forward softmax_forward top 
+Execute       gen_rtl dense_forward -style xilinx -f -lang vhdl -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/vhdl/dense_forward 
+Execute       gen_rtl dense_forward -style xilinx -f -lang vlog -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/verilog/dense_forward 
+Execute       gen_tb_info dense_forward -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/dense_forward -p C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db 
+Execute       report -model dense_forward -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/report/dense_forward_csynth.rpt -f 
+Execute       report -model dense_forward -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/report/dense_forward_csynth.xml -f -x 
+Execute       report -model dense_forward -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/dense_forward.verbose.rpt -verbose -f 
+Execute       db_write -model dense_forward -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/dense_forward.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'softmax_forward' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model softmax_forward -vendor xilinx -mg_file C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/softmax_forward.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'softmax_forward_softmax_kernel' to 'softmax_forward_sJfO' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'softmax_forward_softmax_bias' to 'softmax_forward_sKfY' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'top_fadd_32ns_32nAem': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fmul_32ns_32nBew': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'softmax_forward'.
+INFO: [HLS 200-111]  Elapsed time: 0.403 seconds; current allocated memory: 138.229 MB.
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl softmax_forward -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/systemc/softmax_forward -synmodules lstm_forward_once dense_forward softmax_forward top 
+Execute       gen_rtl softmax_forward -style xilinx -f -lang vhdl -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/vhdl/softmax_forward 
+Execute       gen_rtl softmax_forward -style xilinx -f -lang vlog -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/verilog/softmax_forward 
+Execute       gen_tb_info softmax_forward -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/softmax_forward -p C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db 
+Execute       report -model softmax_forward -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/report/softmax_forward_csynth.rpt -f 
+Execute       report -model softmax_forward -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/report/softmax_forward_csynth.xml -f -x 
+Execute       report -model softmax_forward -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/softmax_forward.verbose.rpt -verbose -f 
+Execute       db_write -model softmax_forward -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/softmax_forward.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model top -vendor xilinx -mg_file C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/img' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Global array 'h' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'dense_output' will not be exposed as RTL port.
+INFO: [RTGEN 206-100] Generating core module 'top_dadd_64ns_64nFfa': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_dmul_64ns_64nGfk': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fpext_32ns_64DeQ': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'top_fptrunc_64ns_CeG': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+Command       create_rtl_model done; 0.144 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.458 seconds; current allocated memory: 139.066 MB.
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl top -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/systemc/top -synmodules lstm_forward_once dense_forward softmax_forward top 
+Execute       gen_rtl top -istop -style xilinx -f -lang vhdl -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/vhdl/top 
+Execute       gen_rtl top -istop -style xilinx -f -lang vlog -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/verilog/top 
+Execute       export_constraint_db -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.constraint.tcl -f -tool general 
+Execute       report -model top -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.design.xml -verbose -f -dv 
+Command       report done; 0.403 sec.
+Execute       report -model top -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.sdaccel.xml -verbose -f -sdaccel 
+Execute       gen_tb_info top -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top -p C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db 
+Execute       report -model top -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/report/top_csynth.rpt -f 
+Execute       report -model top -o C:/Users/dongzw/Desktop/fpga/c/hls/default/syn/report/top_csynth.xml -f -x 
+Execute       report -model top -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.verbose.rpt -verbose -f 
+Command       report done; 0.392 sec.
+Execute       db_write -model top -o C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.adb -f 
+Execute       sc_get_clocks top 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain top 
+INFO-FLOW: Model list for RTL component generation: lstm_forward_once dense_forward softmax_forward top
+INFO-FLOW: Handling components in module [lstm_forward_once] ... 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/lstm_forward_once.compgen.tcl 
+INFO-FLOW: Found component top_fadd_32ns_32nAem.
+INFO-FLOW: Append model top_fadd_32ns_32nAem
+INFO-FLOW: Found component top_fmul_32ns_32nBew.
+INFO-FLOW: Append model top_fmul_32ns_32nBew
+INFO-FLOW: Found component top_fptrunc_64ns_CeG.
+INFO-FLOW: Append model top_fptrunc_64ns_CeG
+INFO-FLOW: Found component top_fpext_32ns_64DeQ.
+INFO-FLOW: Append model top_fpext_32ns_64DeQ
+INFO-FLOW: Found component top_fcmp_32ns_32nEe0.
+INFO-FLOW: Append model top_fcmp_32ns_32nEe0
+INFO-FLOW: Found component top_dadd_64ns_64nFfa.
+INFO-FLOW: Append model top_dadd_64ns_64nFfa
+INFO-FLOW: Found component top_dmul_64ns_64nGfk.
+INFO-FLOW: Append model top_dmul_64ns_64nGfk
+INFO-FLOW: Found component lstm_forward_oncebkb.
+INFO-FLOW: Append model lstm_forward_oncebkb
+INFO-FLOW: Found component lstm_forward_oncecud.
+INFO-FLOW: Append model lstm_forward_oncecud
+INFO-FLOW: Found component lstm_forward_oncedEe.
+INFO-FLOW: Append model lstm_forward_oncedEe
+INFO-FLOW: Found component lstm_forward_onceeOg.
+INFO-FLOW: Append model lstm_forward_onceeOg
+INFO-FLOW: Found component lstm_forward_oncefYi.
+INFO-FLOW: Append model lstm_forward_oncefYi
+INFO-FLOW: Found component lstm_forward_onceg8j.
+INFO-FLOW: Append model lstm_forward_onceg8j
+INFO-FLOW: Found component lstm_forward_oncehbi.
+INFO-FLOW: Append model lstm_forward_oncehbi
+INFO-FLOW: Found component lstm_forward_onceibs.
+INFO-FLOW: Append model lstm_forward_onceibs
+INFO-FLOW: Found component lstm_forward_oncejbC.
+INFO-FLOW: Append model lstm_forward_oncejbC
+INFO-FLOW: Found component lstm_forward_oncekbM.
+INFO-FLOW: Append model lstm_forward_oncekbM
+INFO-FLOW: Found component lstm_forward_oncelbW.
+INFO-FLOW: Append model lstm_forward_oncelbW
+INFO-FLOW: Found component lstm_forward_oncemb6.
+INFO-FLOW: Append model lstm_forward_oncemb6
+INFO-FLOW: Found component lstm_forward_oncencg.
+INFO-FLOW: Append model lstm_forward_oncencg
+INFO-FLOW: Handling components in module [dense_forward] ... 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/dense_forward.compgen.tcl 
+INFO-FLOW: Found component dense_forward_denHfu.
+INFO-FLOW: Append model dense_forward_denHfu
+INFO-FLOW: Found component dense_forward_denIfE.
+INFO-FLOW: Append model dense_forward_denIfE
+INFO-FLOW: Handling components in module [softmax_forward] ... 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/softmax_forward.compgen.tcl 
+INFO-FLOW: Found component softmax_forward_sJfO.
+INFO-FLOW: Append model softmax_forward_sJfO
+INFO-FLOW: Found component softmax_forward_sKfY.
+INFO-FLOW: Append model softmax_forward_sKfY
+INFO-FLOW: Handling components in module [top] ... 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.compgen.tcl 
+INFO-FLOW: Found component top_c.
+INFO-FLOW: Append model top_c
+INFO-FLOW: Found component top_softmax_output.
+INFO-FLOW: Append model top_softmax_output
+INFO-FLOW: Append model lstm_forward_once
+INFO-FLOW: Append model dense_forward
+INFO-FLOW: Append model softmax_forward
+INFO-FLOW: Append model top
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: top_fadd_32ns_32nAem top_fmul_32ns_32nBew top_fptrunc_64ns_CeG top_fpext_32ns_64DeQ top_fcmp_32ns_32nEe0 top_dadd_64ns_64nFfa top_dmul_64ns_64nGfk lstm_forward_oncebkb lstm_forward_oncecud lstm_forward_oncedEe lstm_forward_onceeOg lstm_forward_oncefYi lstm_forward_onceg8j lstm_forward_oncehbi lstm_forward_onceibs lstm_forward_oncejbC lstm_forward_oncekbM lstm_forward_oncelbW lstm_forward_oncemb6 lstm_forward_oncencg dense_forward_denHfu dense_forward_denIfE softmax_forward_sJfO softmax_forward_sKfY top_c top_softmax_output lstm_forward_once dense_forward softmax_forward top
+INFO-FLOW: To file: write model top_fadd_32ns_32nAem
+INFO-FLOW: To file: write model top_fmul_32ns_32nBew
+INFO-FLOW: To file: write model top_fptrunc_64ns_CeG
+INFO-FLOW: To file: write model top_fpext_32ns_64DeQ
+INFO-FLOW: To file: write model top_fcmp_32ns_32nEe0
+INFO-FLOW: To file: write model top_dadd_64ns_64nFfa
+INFO-FLOW: To file: write model top_dmul_64ns_64nGfk
+INFO-FLOW: To file: write model lstm_forward_oncebkb
+INFO-FLOW: To file: write model lstm_forward_oncecud
+INFO-FLOW: To file: write model lstm_forward_oncedEe
+INFO-FLOW: To file: write model lstm_forward_onceeOg
+INFO-FLOW: To file: write model lstm_forward_oncefYi
+INFO-FLOW: To file: write model lstm_forward_onceg8j
+INFO-FLOW: To file: write model lstm_forward_oncehbi
+INFO-FLOW: To file: write model lstm_forward_onceibs
+INFO-FLOW: To file: write model lstm_forward_oncejbC
+INFO-FLOW: To file: write model lstm_forward_oncekbM
+INFO-FLOW: To file: write model lstm_forward_oncelbW
+INFO-FLOW: To file: write model lstm_forward_oncemb6
+INFO-FLOW: To file: write model lstm_forward_oncencg
+INFO-FLOW: To file: write model dense_forward_denHfu
+INFO-FLOW: To file: write model dense_forward_denIfE
+INFO-FLOW: To file: write model softmax_forward_sJfO
+INFO-FLOW: To file: write model softmax_forward_sKfY
+INFO-FLOW: To file: write model top_c
+INFO-FLOW: To file: write model top_softmax_output
+INFO-FLOW: To file: write model lstm_forward_once
+INFO-FLOW: To file: write model dense_forward
+INFO-FLOW: To file: write model softmax_forward
+INFO-FLOW: To file: write model top
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d C:/Users/dongzw/Desktop/fpga/c/hls/default
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.131 sec.
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.135 sec.
+Command       ap_source done; 0.135 sec.
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/lstm_forward_once.compgen.tcl 
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncebkb_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncecud_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncedEe_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_onceeOg_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncefYi_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_onceg8j_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncehbi_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_onceibs_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncejbC_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncekbM_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncelbW_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'lstm_forward_oncemb6_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'lstm_forward_oncencg_ram (RAM)' using block RAMs.
+Command       ap_source done; 7.818 sec.
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/dense_forward.compgen.tcl 
+INFO: [RTMG 210-279] Implementing memory 'dense_forward_denHfu_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'dense_forward_denIfE_rom' using auto ROMs.
+Command       ap_source done; 1.573 sec.
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/softmax_forward.compgen.tcl 
+INFO: [RTMG 210-279] Implementing memory 'softmax_forward_sJfO_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'softmax_forward_sKfY_rom' using distributed ROMs.
+Command       ap_source done; 0.186 sec.
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'top_c_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'top_softmax_output_ram (RAM)' using distributed RAMs with power-on initialization.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d C:/Users/dongzw/Desktop/fpga/c/hls/default
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl 
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.106 sec.
+Execute             source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.147 sec.
+Execute           source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.15 sec.
+Command       ap_source done; 0.15 sec.
+Execute       source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source D:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=top xml_exists=0
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.tbgen.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/lstm_forward_once.compgen.tcl 
+Command       ap_source done; 0.328 sec.
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/dense_forward.compgen.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/softmax_forward.compgen.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/lstm_forward_once.compgen.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/dense_forward.compgen.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/softmax_forward.compgen.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.compgen.tcl 
+Execute         source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.tbgen.tcl 
+Execute         source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/lstm_forward_once.compgen.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/dense_forward.compgen.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/softmax_forward.compgen.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.compgen.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.constraint.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=6
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=2
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=30 #gSsdmPorts=6
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.tbgen.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.tbgen.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.tbgen.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_export -xo 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/top.constraint.tcl 
+Execute       sc_get_clocks top 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/impl/misc/top_ap_dadd_3_full_dsp_64_ip.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/impl/misc/top_ap_dmul_3_max_dsp_64_ip.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/impl/misc/top_ap_fadd_2_full_dsp_32_ip.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/impl/misc/top_ap_fcmp_0_no_dsp_32_ip.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/impl/misc/top_ap_fmul_1_max_dsp_32_ip.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/impl/misc/top_ap_fpext_0_no_dsp_32_ip.tcl 
+Execute       source C:/Users/dongzw/Desktop/fpga/c/hls/default/impl/misc/top_ap_fptrunc_0_no_dsp_64_ip.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: C:/Users/dongzw/Desktop/fpga/c/hls/default/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:19 ; elapsed = 00:00:43 . Memory (MB): peak = 218.148 ; gain = 133.078
+INFO: [SYSC 207-301] Generating SystemC RTL for top.
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+Command     autosyn done; 22.884 sec.
+Execute     get_part 
+Execute     get_config_export -sdx_tcl 
+Command   csynth_design done; 42.477 sec.
+Command ap_source done; 42.793 sec.
+Execute cleanup_all 

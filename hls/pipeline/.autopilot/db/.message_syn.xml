@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;src/rnn.cpp&apos; ..."/>
+	<Message severity="WARNING" prefix="[HLS 214-114]" key="HLS 214-114" tag="DATAFLOW,SDX_KERNEL" content="Only function calls and local variable declarations are allowed in a dataflow region: src/rnn.cpp:152:5"/>
+	<Message severity="WARNING" prefix="[HLS 200-471]" key="HLS 200-471" tag="DATAFLOW,SDX_KERNEL" content="Dataflow form checks found 1 issue(s) in file src/rnn.cpp"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 104.781 ; gain = 19.707"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 104.781 ; gain = 19.707"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 116.469 ; gain = 31.395"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;img_preprocess&apos; into &apos;top&apos; (src/rnn.cpp:85) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;lstm_forward&apos; into &apos;top&apos; (src/rnn.cpp:86) automatically."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 126.277 ; gain = 41.203"/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;img_preprocess&apos; into &apos;top&apos; (src/rnn.cpp:85) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;lstm_forward&apos; into &apos;top&apos; (src/rnn.cpp:86) automatically."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;arr1&apos; should be updated in process function &apos;lstm_forward_once_Loop_memset_arr1_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="ERROR" prefix="[XFORM 203-711]" key="XFORM_DATAFLOW_ILLEGAL_192" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="Array &apos;img_line&apos; failed dataflow checking: it cannot be read by more than 1 process."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_618" tag="SDX,DATAFLOW" content="Argument &apos;img_line&apos; has read operations in process function &apos;lstm_forward_once_Loop_memset_arr1_proc&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_618" tag="SDX,DATAFLOW" content="Argument &apos;img_line&apos; has read operations in process function &apos;lstm_forward_once_Loop_memset_arr2_proc9&apos;."/>
+	<Message severity="ERROR" prefix="[HLS 200-70]" key="HLS_70_1855" tag="" content="Pre-synthesis failed."/>
+</Messages>

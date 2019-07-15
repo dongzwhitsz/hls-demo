@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "cmath": "cpp",
+        "ostream": "cpp"
+    },
+    "python.pythonPath": "D:\\Anaconda3\\envs\\tensorflow\\python.exe"
+}
